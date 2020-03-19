@@ -17,7 +17,7 @@ pipeline {
            sh "mvn test"
            }
           }
-            
+
              stage('Create coverage report') {
                       steps {
                            sh "mvn cobertura:cobertura"

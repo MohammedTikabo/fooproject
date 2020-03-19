@@ -5,8 +5,9 @@ Library             SeleniumLibrary
 Test Setup          Begin Web Test
 Test Teardown       End Web Test
 
-***Varables***
-${BROWSER}          chrome
+
+*** Variables ***
+${BROWSER}        chrome
 
 *** Keywords ***
 Begin Web Test
