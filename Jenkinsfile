@@ -11,22 +11,23 @@ pipeline {
             sh "mvn compile"
              }
          }
-          stage('Create coverage report') {
-                              steps {
-                                 sh "mvn cobertura:cobertura"
-                              }
-                         }
+
          stage('Test') {
             steps {
            sh "mvn test"
            }
+          }
             post {
               always {
                junit '**/TEST*.xml'
                   }
             }
-         }
-      stage('newman') {
+             stage('Create coverage report') {
+                      steps {
+                           sh "mvn cobertura:cobertura"
+                      }
+                }
+            stage('newman') {
              steps {
                  sh 'newman run "Restful Booker.postman_collection.json" --environment "Restful Booker.postman_environment.json" --reporters junit'
              }
@@ -77,6 +78,6 @@ pipeline {
 
 
 
- 
+
 
 
