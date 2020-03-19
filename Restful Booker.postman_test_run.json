@@ -1,0 +1,327 @@
+{
+	"id": "83dfaddd-96c0-404f-98d9-56a2706b406e",
+	"name": "Restful Booker",
+	"timestamp": "2020-03-05T13:35:14.999Z",
+	"collection_id": "df8a69ad-c084-4f6e-9337-8486994d3d9c",
+	"folder_id": 0,
+	"environment_id": "c452828b-b721-40dd-9546-81ec6bbb99a8",
+	"totalPass": 23,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "287dc49f-05d3-4935-bced-3603cd2e16e9",
+			"name": "Get Auth Token",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 542,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				542
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "204d36cd-0a12-45f7-9472-5628eefed37a",
+			"name": "Get Bookings",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 125,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				125
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "06971b9b-c8d4-4e3d-8098-74ad6931ba8d",
+			"name": "Create new Booking",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 124,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check firstname of new Booking": true,
+				"Check lastname of new Booking": true,
+				"Check totalprice of new Booking": true,
+				"Check depositpaid of new Booking": true,
+				"Check bookingdates for checkin of new Booking": true,
+				"Check bookingdates for checkout of new Booking": true,
+				"Check additionalneeds of new Booking": true,
+				"Response code 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check firstname of new Booking": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check lastname of new Booking": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check totalprice of new Booking": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check depositpaid of new Booking": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check bookingdates for checkin of new Booking": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check bookingdates for checkout of new Booking": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check additionalneeds of new Booking": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				124
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check firstname of new Booking": true,
+					"Check lastname of new Booking": true,
+					"Check totalprice of new Booking": true,
+					"Check depositpaid of new Booking": true,
+					"Check bookingdates for checkin of new Booking": true,
+					"Check bookingdates for checkout of new Booking": true,
+					"Check additionalneeds of new Booking": true,
+					"Response code 200": true
+				}
+			]
+		},
+		{
+			"id": "b2e0afd3-9dec-48e5-a637-6ba53f1fe5a7",
+			"name": "Get Booking by ID",
+			"url": "https://restful-booker.herokuapp.com/booking/20",
+			"time": 130,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify Booking is not empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify Booking is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				130
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify Booking is not empty": true
+				}
+			]
+		},
+		{
+			"id": "bb823bbd-bae4-4fad-8b6b-d1c6be8080bc",
+			"name": "Update Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/20",
+			"time": 126,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify firstname update": true,
+				"Verify checkin update": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify firstname update": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify checkin update": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				126
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify firstname update": true,
+					"Verify checkin update": true
+				}
+			]
+		},
+		{
+			"id": "ec56ca50-dd47-42a1-999c-59cb64b9e5b7",
+			"name": "Update Booking (partial)",
+			"url": "https://restful-booker.herokuapp.com/booking/20",
+			"time": 124,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify firstname is updated": true,
+				"Verify lastname is updated": true,
+				"Verify additionalneeds is updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify firstname is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify lastname is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify additionalneeds is updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				124
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify firstname is updated": true,
+					"Verify lastname is updated": true,
+					"Verify additionalneeds is updated": true
+				}
+			]
+		},
+		{
+			"id": "2bf0bd4e-01c4-427e-b279-8fddc8b40377",
+			"name": "Delete Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/20",
+			"time": 124,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Verify StatusText": true,
+				"Response should be Not Found": true,
+				"Response code 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify StatusText": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should be Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response code 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				124
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Verify StatusText": true,
+					"Response should be Not Found": true,
+					"Response code 404": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"collection": {
+		"requests": [
+			{
+				"id": "287dc49f-05d3-4935-bced-3603cd2e16e9",
+				"method": "POST"
+			},
+			{
+				"id": "204d36cd-0a12-45f7-9472-5628eefed37a",
+				"method": "GET"
+			},
+			{
+				"id": "06971b9b-c8d4-4e3d-8098-74ad6931ba8d",
+				"method": "POST"
+			},
+			{
+				"id": "b2e0afd3-9dec-48e5-a637-6ba53f1fe5a7",
+				"method": "GET"
+			},
+			{
+				"id": "bb823bbd-bae4-4fad-8b6b-d1c6be8080bc",
+				"method": "PUT"
+			},
+			{
+				"id": "ec56ca50-dd47-42a1-999c-59cb64b9e5b7",
+				"method": "PATCH"
+			},
+			{
+				"id": "2bf0bd4e-01c4-427e-b279-8fddc8b40377",
+				"method": "DELETE"
+			}
+		]
+	}
+}
