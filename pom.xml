@@ -28,14 +28,17 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
             </plugin>
-              <plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.5.1</version>
+                <version>2.7</version>
                 <configuration>
-                    <formats>
-                        <format>xml</format>
-                    </formats>
+                    <instrumentation>
+                        <excludes>
+                            <exclude>*.json</exclude>
+                            <exclude>*.robot</exclude>
+                        </excludes>
+                    </instrumentation>
                 </configuration>
                 <executions>
                     <execution>
@@ -49,6 +52,6 @@
         </plugins>
     </build>
 
-    
+
 
 </project>
