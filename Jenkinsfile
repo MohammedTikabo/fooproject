@@ -17,11 +17,7 @@ pipeline {
            sh "mvn test"
            }
           }
-            post {
-              always {
-               junit '**/TEST*.xml'
-                  }
-            }
+            
              stage('Create coverage report') {
                       steps {
                            sh "mvn cobertura:cobertura"
